@@ -1,5 +1,8 @@
 import theme_pattern from "../../assets/theme_pattern.svg";
 import about_profile from "../../assets/about_profile.svg";
+
+import { skills } from "../../assets/data";
+
 export const About = () => {
   return (
     <div className="font-customFont">
@@ -9,7 +12,7 @@ export const About = () => {
       </div>
       <div className="flex-row md:flex justify-center m-10 items-center">
         <div className="flex gap-8 size-80">
-          <img src={about_profile} className="rounded-lg"/>
+          <img src={about_profile} className="rounded-lg" />
         </div>
         <div className="md:w-3/5">
           <p className="text-xl mb-5">
@@ -54,7 +57,7 @@ export const About = () => {
           </div>
         </div>
       </div>
-      <div className="flex gap-4 justify-around text-center my-20">
+      {/* <div className="flex gap-4 justify-around text-center my-20">
         <div className="">
           <p className="text-4xl">0+</p>
           <p>Years of experience</p>
@@ -67,6 +70,15 @@ export const About = () => {
           <p className="text-4xl">10+</p>
           <p>Happy clients</p>
         </div>
+      </div> */}
+      <div className="flex justify-center gap-14">
+        {skills.map((ele, ind) => (
+          <div key={ind} className="flex-row w-52 my-10 transform cursor-pointer hover:scale-110">
+            <img src={ele.img_link} className="size-52 rounded-lg"/>
+            <h1 className="font-bold text-lg my-4">{ele.title}</h1>
+            <p className="">{ele.description}</p>
+          </div>
+        ))}
       </div>
     </div>
   );

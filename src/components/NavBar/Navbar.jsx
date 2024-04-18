@@ -11,7 +11,7 @@ export const Navbar = () => {
         <li>Portfolio</li>
         <li>Contact</li>
       </ul>
-      <div className="py-3 px-7 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 cursor-pointer rounded-3xl transition delay-150 hover:scale-105">
+      <div className="hidden md:block py-3 px-7 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 cursor-pointer rounded-3xl transition delay-150 hover:scale-105">
         Connect With Me
       </div>
     </div>
