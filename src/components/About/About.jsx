@@ -5,7 +5,7 @@ import { skills } from "../../assets/data";
 
 export const About = () => {
   return (
-    <div className="font-customFont">
+    <div id="about" className="font-customFont">
       <div className="flex justify-center m-20">
         <h1 className="text-5xl font-bold  relative">About Me</h1>
         <img src={theme_pattern} className="absolute w-32 ml-20 mt-5 -z-10" />

@@ -7,7 +7,7 @@ import { AiOutlineEye } from "react-icons/ai";
 
 export const Projects = () => {
   return (
-    <div className="font-customFont">
+    <div id="projects" className="font-customFont">
       <div className="flex justify-center mb-14">
         <h1 className="text-5xl font-bold  relative font-customFont">
           Projects

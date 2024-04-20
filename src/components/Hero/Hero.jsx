@@ -1,8 +1,9 @@
 import profile_img from "../../assets/profile_img.svg";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 export const Hero = () => {
   return (
-    <div className="font-customFont">
+    <div id="about" className="font-customFont">
       <div className="flex justify-center mb-8 ">
         <img src={profile_img} />
       </div>
@@ -21,9 +22,13 @@ export const Hero = () => {
         </p>
       </div>
       <div className="flex justify-center gap-12">
-        <div className="py-3 px-7 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 cursor-pointer rounded-3xl hover:border-2 hover:border-white">
+        <AnchorLink
+          href="#contact"
+          className="py-3 px-7 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 cursor-pointer rounded-3xl hover:border-2 hover:border-white"
+        >
           Connect With me
-        </div>
+        </AnchorLink>
+
         <div className="py-3 px-7 border-2 rounded-3xl hover:border-purple-900 border-white">
           Resume
         </div>
