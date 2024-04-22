@@ -28,17 +28,21 @@ const Project = ({ ele }) => {
   const [show, setShow] = useState(false);
   return (
     <div
-      className="p-3 w-72 bg-gray-800 rounded-lg transform hover:scale-110 cursor-pointer hover:border-4 hover:border-pink-800"
+      className="p-3 w-72 bg-gray-800 rounded-lg transform hover:scale-110 cursor-pointer hover:border-4 hover:border-pink-800 group"
       onMouseEnter={() => setShow(true)}
       onMouseLeave={() => setShow(false)}
     >
-      <img src={ele.img_link} className="object-cover" />
+      <img src={ele.img_link} className="object-cover group-hover:opacity-50" />
       <h1 className="text-lg font-bold p-2">{ele.title}</h1>
       <p className="text-gray-500 p-2">{ele.description}</p>
       {show && (
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-[150%] flex justify-center gap-10">
-          <a target="_blank" href={ele.gitHub_link}><AiFillGithub className="size-10 transform hover:scale-105"/></a>
-          <a target="_blank" href={ele.live}><AiOutlineEye className="size-10 transform hover:scale-105"/></a>
+          <a target="_blank" href={ele.gitHub_link}>
+            <AiFillGithub className="size-10 transform hover:scale-105" />
+          </a>
+          <a target="_blank" href={ele.live}>
+            <AiOutlineEye className="size-10 transform hover:scale-105" />
+          </a>
         </div>
       )}
     </div>

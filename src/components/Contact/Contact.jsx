@@ -2,8 +2,31 @@ import theme_pattern from "../../assets/theme_pattern.svg";
 import { IoMailOpenOutline } from "react-icons/io5";
 import { FiPhoneCall } from "react-icons/fi";
 import { GrLocation } from "react-icons/gr";
+import { toast } from "react-toastify";
 
 const Contact = () => {
+  const onSubmit = async (event) => {
+    event.preventDefault();
+
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "78104fe2-fb18-4f56-a296-09671e53ea75");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      toast.success("message sent successfully",{theme:"dark",autoClose:1500});
+      event.target.reset();
+    }else{
+      console.log(data);
+      toast.error(data.message,{theme:"dark",autoClose:1500});
+    }
+  };
   return (
     <div id="contact" className="font-customFont">
       <div className="flex justify-center">
@@ -33,15 +56,17 @@ const Contact = () => {
             <h1>Bangalore, india</h1>
           </div>
         </div>
-        <form className="w-1/2">
+        <form className="w-1/2" onSubmit={onSubmit}>
           <label>your name</label>
           <input
             type="text"
+            name="name"
             className="focus:outline-none w-full px-4 py-2 bg-gray-800 my-4"
             placeholder="Enter ur name"
           />
           <label>your Email</label>
           <input
+            name="email"
             type="email"
             className="focus:outline-none w-full px-4 py-2 bg-gray-800 my-4"
             placeholder="Enter ur email"
@@ -49,10 +74,11 @@ const Contact = () => {
           <label>write your message</label>
           <textarea
             rows={5}
+            name="message"
             className="focus:outline-none w-full px-4 py-2 bg-gray-800 my-4"
             placeholder="Enter ur message"
           />
-          <button className="px-4 py-2 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 transform hover:scale-105">
+          <button type="submit" className="px-4 py-2 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 transform hover:scale-105">
             Submit now
           </button>
         </form>

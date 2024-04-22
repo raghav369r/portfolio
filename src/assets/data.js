@@ -52,8 +52,8 @@ export const projects = [
   {
     title: "Portfolio",
     img_link: portfolio,
-    gitHub_link: "https://github.com/raghav369r/auth-code-apibackend",
-    live: "https://codee-pract.web.app/",
+    gitHub_link: "https://github.com/raghav369r/portfolio",
+    live: "https://r-portfolio-r.web.app/",
     description:"This App Was Build Using React"
     
 },
