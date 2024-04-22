@@ -8,7 +8,7 @@ export const Hero = () => {
         <img src={profile_img} />
       </div>
       <div className="flex justify-center mb-8 ">
-        <h1 className="text-5xl font-bold w-1/2 text-center">
+        <h1 className="text-5xl font-bold md:w-1/2 text-center">
           <span className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 inline-block text-transparent bg-clip-text">
             I &apos; m Raghav Reddy,
           </span>{" "}
@@ -16,7 +16,7 @@ export const Hero = () => {
         </h1>
       </div>
       <div className="flex justify-center">
-        <p className="mb-8 w-1/2 text-center text-xl">
+        <p className="mb-8 md:w-1/2 text-center text-xl">
           I am fullstack developer from california, USA with 10 yesrs of
           experience in multiple companies like Microsoft, Tesla and Apple
         </p>

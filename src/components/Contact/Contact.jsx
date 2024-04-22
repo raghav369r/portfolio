@@ -35,8 +35,8 @@ const Contact = () => {
         </h1>
         <img src={theme_pattern} className="absolute w-48 ml-36 -z-10" />
       </div>
-      <div className="flex justify-center p-10">
-        <div className="w-1/3 mt-4">
+      <div className="md:flex justify-center p-10">
+        <div className="md:w-1/3 mt-4">
           <h1 className="font-semibold text-4xl bg-gradient-to-r from-pink-800 via-green-800 to-yellow-600 inline-block bg-clip-text text-transparent">
             Let&apos;s talk
           </h1>
@@ -56,7 +56,7 @@ const Contact = () => {
             <h1>Bangalore, india</h1>
           </div>
         </div>
-        <form className="w-1/2" onSubmit={onSubmit}>
+        <form className="md:w-1/2" onSubmit={onSubmit}>
           <label>your name</label>
           <input
             type="text"
@@ -83,10 +83,10 @@ const Contact = () => {
           </button>
         </form>
       </div>
-      <hr className="mx-20" />
-      <div className="flex justify-between mx-20 my-5">
+      <hr className="md:mx-20" />
+      <div className="px-4 flex flex-col md:flex-row justify-between md:mx-20 my-5 md:px-0">
         <div className="mb-10">@2024 Raghav Reddy, All rights reserved.</div>
-        <div className="flex gap-4">
+        <div className="flex flex-col md:flex-row gap-4">
           <h1>Terms Of Services</h1>
           <h1>Privacy Policy</h1>
           <h1>Connect With Me</h1>

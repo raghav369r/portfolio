@@ -14,7 +14,7 @@ export const Projects = () => {
         </h1>
         <img src={theme_pattern} className="absolute w-40 ml-20 mt-3 -z-10" />
       </div>
-      <div className="flex justify-center gap-10">
+      <div className="flex flex-wrap justify-center gap-10">
         {projects.map((ele, ind) => (
           <Project key={ind} ele={ele} />
         ))}
