@@ -10,6 +10,9 @@ export default {
           customFont: ['"Custom Font"', "Outfit"],
           // Add more custom font families as needed
         },
+        colors:{
+          bg:"#161513",
+        },
     },
     },
   plugins: [],

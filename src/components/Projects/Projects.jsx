@@ -32,7 +32,7 @@ const Project = ({ ele }) => {
       onMouseEnter={() => setShow(true)}
       onMouseLeave={() => setShow(false)}
     >
-      <img src={ele.img_link} className="object-cover group-hover:opacity-50" />
+      <img src={ele.img_link} className="object-cover group-hover:opacity-50 transform" />
       <h1 className="text-lg font-bold p-2">{ele.title}</h1>
       <p className="text-gray-500 p-2">{ele.description}</p>
       {show && (

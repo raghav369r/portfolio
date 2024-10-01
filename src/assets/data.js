@@ -1,6 +1,7 @@
 import code_master from "./code_master.png";
 import netflix from "./netflix.png";
 import portfolio from "./portfolio.png";
+import twingram from "./twingram.png";
 
 export const skills = [
   {
@@ -39,22 +40,33 @@ export const projects = [
     img_link: code_master,
     gitHub_link: "https://github.com/raghav369r/online-code",
     live: "https://codee-pract.web.app/",
-    description:"This App Was Build Using React, Node, mongodb"
-    },
+    description: "This App Was Build Using React, Node, mongodb",
+  },
+  {
+    title: "TwinGram",
+    img_link: twingram,
+    gitHub_link: "https://github.com/raghav369r/twingram",
+    live: "https://twingram-app.web.app/",
+    description: "This App Was Build Using React, Node, mongodb",
+  },
   {
     title: "Netflix-GPT",
     img_link: netflix,
     gitHub_link: "https://github.com/raghav369r/netflix-gpt",
     live: "https://netflix-6137c.web.app/",
-    description:"This App Was Build Using React"
-    
-},
+    description: "This App Was Build Using React",
+  },
   {
     title: "Portfolio",
     img_link: portfolio,
     gitHub_link: "https://github.com/raghav369r/portfolio",
     live: "https://r-portfolio-r.web.app/",
-    description:"This App Was Build Using React"
-    
-},
+    description: "This App Was Build Using React",
+  },
+  {
+    title: "Auth Backend",
+    gitHub_link: "https://github.com/raghav369r/auth-api-backend",
+    live: null,
+    description: "backend for authentication, running code, saving user data",
+  },
 ];

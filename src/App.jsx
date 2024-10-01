@@ -1,5 +1,5 @@
 import { ToastContainer } from "react-toastify";
-import 'react-toastify/dist/ReactToastify.css';
+import "react-toastify/dist/ReactToastify.css";
 
 import { About } from "./components/About/About";
 import Contact from "./components/Contact/Contact";
@@ -15,7 +15,7 @@ export const App = () => {
       <About />
       <Projects />
       <Contact />
-      <ToastContainer/>
+      <ToastContainer />
     </div>
   );
 };
